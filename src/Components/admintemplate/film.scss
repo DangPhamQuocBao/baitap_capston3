@@ -1,0 +1,182 @@
+#film {
+  margin: 20px;
+  #addFilm {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3w;
+    &:hover {
+      background-color: orangered;
+    }
+  }
+  .timKiem {
+    border-bottom: 1px solid silver;
+    margin-top: 20px;
+
+    input {
+      height: 38px;
+      width: 100%;
+      margin-left: 20px;
+      outline: none;
+    }
+  }
+
+  .myTable {
+    margin-top: 30px;
+    min-width: 400px;
+    height: 600px;
+    overflow: scroll;
+    position: relative;
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      position: relative;
+      thead {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+
+        tr {
+          th {
+            padding: 10px 20px;
+            background-color: blueviolet; //help me fixed this col
+            color: white;
+            font-size: 16px;
+            font-size: 400;
+          }
+        }
+      }
+      tbody {
+        margin-top: 40px;
+        tr {
+          &:nth-child(even) {
+            background-color: rgba(245, 245, 245, 0.6);
+          }
+          td {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-size: 400;
+            border-bottom: 1px solid blueviolet;
+            button:first-child {
+              padding: 0 10px;
+              height: 32px;
+              background-color: orange;
+              color: white;
+              margin: 0 5px;
+              border-radius: 8px;
+              transition: all 0.3s;
+              font-size: 14px;
+              &:hover {
+                background-color: blueviolet;
+              }
+            }
+            button:last-child {
+              padding: 5px 10px;
+              background-color: orangered;
+              color: white;
+              margin: 0 5px;
+              border-radius: 8px;
+              transition: all 0.3s;
+              &:hover {
+                background-color: blueviolet;
+              }
+            }
+            img {
+              width: 60px;
+              height: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #myForm {
+    position: absolute;
+    top: 0;
+    // left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    // padding: 20px;
+    // width: 0px;
+    background-color: whitesmoke;
+    overflow: hidden;
+    transition: all 0.1s;
+    form {
+      background-color: white;
+      border: 1px solid silver;
+      border-radius: 8px;
+      padding: 20px;
+      width: 380px;
+      margin: 20px auto;
+      .formItem {
+        border-bottom: 1px solid silver;
+        position: relative;
+
+        input {
+          width: 100%;
+          height: 38px;
+          outline: none;
+        }
+        button {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 38px;
+        }
+        select {
+          width: 100%;
+          height: 38px;
+          outline: none;
+        }
+        &.hinhAnh {
+          padding: 40px 0;
+        }
+      }
+      p {
+        color: red;
+        font-size: 12px;
+      }
+      button.them {
+        height: 40px;
+        width: 100%;
+        background-color: blueviolet;
+        color: white;
+        margin-top: 20px;
+        transition: all 0.3s;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+          background-color: orangered;
+        }
+      }
+    }
+    h1 {
+      font-size: 24px;
+
+      text-align: center;
+    }
+    button.myClose {
+      padding: 5px 10px;
+      background-color: orangered;
+      color: white;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    .myButton {
+      background-color: blueviolet;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      width: 100%;
+      height: 38px;
+      border-radius: 8px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: orangered;
+      }
+    }
+  }
+}

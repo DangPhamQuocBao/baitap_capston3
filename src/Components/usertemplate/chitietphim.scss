@@ -1,0 +1,30 @@
+#chiTietPhim {
+  padding: 140px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+  .myImg {
+    width: 300px;
+    img {
+      width: 100%;
+    }
+  }
+  .thongTinPhim {
+    h1 {
+      color: blueviolet;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+    p {
+      color: silver;
+      font-size: 14px;
+      width: 300px;
+    }
+  }
+}
